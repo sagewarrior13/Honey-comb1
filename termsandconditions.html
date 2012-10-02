@@ -1,0 +1,48 @@
+<SCRIPT language=JavaScript>
+
+//Terms and conditions page
+
+function checkCheckBox(check){ 
+if (check.agree.checked == false )
+{
+alert('Please check "I accept, then click I Agree.'); // if continue is pressed with no check
+return false;}
+else
+return true;
+}
+</SCRIPT>
+
+<form action="/next_display_page.html" method="GET" onsubmit="return checkCheckBox(this)">
+
+<font size=4><b>The use of The Honeycomb is subject to the following terms of use:</font></b>
+<br><br><br>
+
+<ul>
+<li>The Honeycomb solely belongs to SPSU and any replication or third party use 
+	<br>is strictly prohibited. 
+</li>
+<br>
+
+<li>The account shall reamain as long as it is not closed, cancelled or until the
+	<br>owner of the account has graduated and can no longer access his or her
+	<br>SPSU account. Only one account shall be permitted per user.
+</li>
+<br>
+
+<li>Unauthorised use of this website may give rise to a claim for damages and/or
+	<br>be a criminal offence. Therefore you will be blacklisted and unable to use 	
+	<br>your SPSU email or ID to create another account. 
+</li>
+<br>
+
+<li>No Sexually explicit content or pirated content; this will result in a ban.
+</li>
+</ul>
+
+<br><br><br>
+<b>I agree to the terms and conditions of using the Honeycomb. <br> 
+I agree that all information givin is correct & honest.</b><br><br />
+<input type="checkbox" value="0" name="agree">  <- I accept ->
+<input type="submit" value="I Agree">
+<input type="button" value="I Do Not Agree" onclick="document.location.href='/Thehoneycomb home.html';">
+</form>
